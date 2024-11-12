@@ -1,0 +1,23 @@
+00:10:34 **** Incremental Build of configuration Debug for project LAB3_BUTTON ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/global.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/global.d" -MT"Core/Src/global.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/global.o"
+arm-none-eabi-gcc -o "LAB3_BUTTON.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\STM32\STM32LAB3\LAB3\LAB3_BUTTON\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LAB3_BUTTON.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LAB3_BUTTON.elf
+ 
+arm-none-eabi-size  LAB3_BUTTON.elf 
+arm-none-eabi-objdump -h -S LAB3_BUTTON.elf  > "LAB3_BUTTON.list"
+   text	   data	    bss	    dec	    hex	filename
+  13848	    100	   1780	  15728	   3d70	LAB3_BUTTON.elf
+arm-none-eabi-objcopy  -O ihex LAB3_BUTTON.elf  "LAB3_BUTTON.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary LAB3_BUTTON.elf  "LAB3_BUTTON.bin"
+ 
+Finished building: LAB3_BUTTON.hex
+Finished building: LAB3_BUTTON.list
+ 
+Finished building: LAB3_BUTTON.bin
+ 
+ 
+
+00:10:35 Build Finished. 0 errors, 0 warnings. (took 743ms)
+

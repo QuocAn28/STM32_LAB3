@@ -1,0 +1,16 @@
+/*
+ * fsm_setting.h
+ *
+ *  Created on: Oct 29, 2024
+ *      Author: dangq
+ */
+
+#ifndef INC_FSM_SETTING_H_
+#define INC_FSM_SETTING_H_
+
+#include "main.h"
+#include "global.h"
+
+#endif /* INC_FSM_SETTING_H_ */
+
+void fsm_setting();

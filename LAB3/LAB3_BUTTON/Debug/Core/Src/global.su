@@ -1,0 +1,2 @@
+../Core/Src/global.c:23:6:initLedBuffer	4	static
+../Core/Src/global.c:55:6:Lab3_Init	32	static

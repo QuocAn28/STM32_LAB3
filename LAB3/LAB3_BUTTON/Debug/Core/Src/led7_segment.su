@@ -1,0 +1,8 @@
+../Core/Src/led7_segment.c:11:6:setEN	16	static
+../Core/Src/led7_segment.c:39:6:display7SEG2	16	static
+../Core/Src/led7_segment.c:146:6:display7SEG1	16	static
+../Core/Src/led7_segment.c:253:6:display7SEG_YELLOW_RED	8	static
+../Core/Src/led7_segment.c:307:6:display7SEG_GREEN_RED	8	static
+../Core/Src/led7_segment.c:360:6:display7SEG_RED_YELLOW	8	static
+../Core/Src/led7_segment.c:413:6:display7SEG_RED_GREEN	8	static
+../Core/Src/led7_segment.c:467:6:display7SEG_TFL	8	static
